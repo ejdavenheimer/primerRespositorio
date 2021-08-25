@@ -1,143 +1,32 @@
-/* Colores */
-/* 
-
-/*---------------------------- 
-------- GENERAL STYLE --------
-------------------------------*/
-* {
-	box-sizing: border-box;
-	margin: 0;
-}
-body{
-	font-family: 'Hammersmith One', 'Open Sans', sans-serif;
-	font-size: 1rem;
-}
-/*-------------------
------- HEADER -------
----------------------*/
-.header__box{
-	display: flex;
-	justify-content: space-between;
-	background-color: #00000099;
-	border-bottom: 2px #fff solid;
-	min-width: 800px;
-}
-.menu{
-	display: flex;
-	align-items: center;
-	padding-right: 10px;
-}
-/* HEADER - TITLE AND LOGO */
-.header__title{
-	display: flex;
-	align-items: center;
-	margin-left: 5px;
-}
-.header__title__img{
-	width: 2.4rem;
+.logo{
+	width: 2.2rem;
 	object-fit: contain;
-	padding-left: 5px;
-}
-.header__title__format{
-	color: white;
-	letter-spacing: 2px;
-	text-align: center;
-	padding-left: 5px;
-}
-/* HEADER - MENU */
-.menu__list__option{
-	display: inline-block;
-	padding-left: 10px;
-}
-.menu__list__option a{
-	text-decoration: none;
-	color: #fff;
-	border-bottom: 2px #1AA51A solid;
-}
-.menu__list__option a:hover{
-	background-color: #3ED13E66;
-}
-/*---------------------------
------- GENERAL FOOTER -------
------------------------------*/
-.footer__box{
-	display: flex;
-	align-items: center;
-	background-color: #111;
-	border-top: 2px #fff solid;
-}
-.footer__box__text{
-	color: #fff;
-	margin-left: 5px;
-	width: 100%;
-}
-.footer__box__redes{
-	display: flex;
-	justify-content: space-between;
-	width: 120px;
-	margin-right: 10px;
-}
-.footer__box__redes__icon{
-	display: flex;
-	background-color: #1AA51A;
-}
-.footer__box__redes__icon a{
-	text-decoration: none;
-	display: flex;
-}
-/*--------------------------------------- 
--------------- INDEX STYLE --------------
-----------------------------------------*/
-
-/* ESTRUCTURA GENERAL */
-.grid__container{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 3.2rem 1fr 2rem;
-	height: 100vh;
-}
-.header{
-	display: grid;
-	grid-row: 1/ 2;
-	grid-column: 1 / 2;
-	background-color: #333;
-}
-.main{
-	display: grid;
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
-
-	grid-template-rows: 1fr;
-	grid-template-columns: repeat(3, 1fr);
-}
-footer{
-	display: grid;
-	grid-row: 3 / 4;
-	grid-column: 1 / 2;
 }
 
+.col-4-mob{
+	height: 82vh;
+}
+
+.col-12-tam{
+	height: 22vh;
+}
 /* MAIN STRUCTURE */
 .main__cultura{
-	grid-row: 1/ span 1;
-	grid-column: 1 / 2;
 	background-image: url("../../img/Cultura.jpg");
 	background-size: cover;
 }
 
 .main__animal{
-	grid-row: 1/ span 1;
-	grid-column: 2/3;
 	background-image: url("../../img/Animales.jpg");
 	background-size: cover;
 	background-position: center;
 }
 
 .main__lugares{
-	grid-row: 1/ span 1;
-	grid-column: 3/4;
 	background-image: url("../../img/Lugares.jpg");
 	background-size: cover;
 }
+
 /* MAIN STYLE */
 .main__front{
 	text-decoration: none;
@@ -160,128 +49,11 @@ footer{
 .main__front__box:hover{
 	background-color: #00000033;
 }
-/*-------------------------------------- 
------------- CULTURA STYLE ------------
----------------------------------------*/
-.main__culture{
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
-	background-color: #00000099;
-}
-.main__culture__title{
-	padding:  2% 3%;
-	font-size: 2rem;
-	background-color: #FFB417;
-}
-.main__culture__box{
-	margin: 0 4%;
-	padding:  1rem 1rem;
-	background-color: #222;
-	color: #fff;
-}
-.main__culture__box__bloque{
-	display: inline-block;
-	background-color: #111;
-	width: 33%;
-}
-.main__culture__box__bloque img{
-	object-fit: contain;
-	width: 100%;
-}
-/*-------------------------------------- 
------------- ANIMALES STYLE ------------
----------------------------------------*/
-.main__animales{
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
-	background-color: #00000099;
-}
-.main__animales__title{
-	padding:  2% 3%;
-	font-size: 2rem;
-	background-color: #FFB417;
-}
-.main__animales__box__container{
-	display: flex;
-	align-items: center;
-	margin: 0 4%;
-	background-color: #222;
-	color: #fff;
-	border-bottom: 2px #aaa solid;
-	height: 85vh;
-	font-family: 'Open Sans';
-}
-.main__animales__box__container__foto{
-	max-width: 45%;
-	min-width: 30%;
-	margin: 0 2%;
-	object-fit: contain;
-}
-.main__animales__box__container__text{
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-	justify-content: center;
-}
-.main__animales__box__container__text p{
-	margin-top: 5px;
-	width: 300px;
-	height: 200px;
-	font-weight: 300;
+
+.redes{
+	text-decoration: none;
 }
 
-
-/*-------------------------------------- 
------------- LUGARES STYLE ------------
----------------------------------------*/
-.main__lugar{
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
-	background-color: #00000099;
-}
-.main__lugar__title{
-	padding:  2% 3%;
-	font-size: 2rem;
-	background-color: #FFB417;
-	transform: translate(0, 50px);
-}
-.main__lugar__box{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0 4%;
-	padding:  1rem 1rem;
-	background-image: linear-gradient(135deg, #ffff00 0, #efff00 12.5%, #cbff00 25%, #a5ff00 37.5%, #7df810 50%, #4eeb2c 62.5%, #00df3d 75%, #00d44b 87.5%, #00cb57 100%);
-}
-.main__lugar__box__foto{
-	display: inline-block;
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
-	transform: rotate(15deg);
-}
-
-/*-------------------------------------- 
------------- CONTACTO STYLE ------------
----------------------------------------*/
-.main__contact{
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
-	background-color: #00000099;
-}
-.main__contact__title{
-	padding:  2% 3%;
-	font-size: 2rem;
-	background-color: #FFB417;
-}
-.main__contact__box{
-	margin: 0 4%;
-	padding:  1rem 1rem;
-	background-color: #222;
-	color: #fff;
-}
-.container-formulario{
-	display: inline-block;
-	padding: 30px;
-	background-color: #111;
+.nav-link{
+	color: #FFF !important;
 }
